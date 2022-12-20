@@ -9,3 +9,6 @@ class Robot:
     def robot_attack(self, dinosaur):
         self.attack -= dinosaur.health
 
+    # def robot_health(self, robot_health):
+    #     self.health = robot_health    
+
