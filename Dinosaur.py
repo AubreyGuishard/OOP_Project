@@ -5,8 +5,9 @@ class Dinosaur:
         self.health = health
 
     def dinosaur_attack(self, robot):
-        self.attack -= robot.health
+        robot.health-= self.attack_power
+        
         
 
-    # def dinosaur_health(self, dino_health):
-    #     self.health = dino_health
+    def dinosaur_still_alive(self):
+        return self.health > 0
