@@ -16,11 +16,14 @@ class Battlefield:
     def battle_phase(self):
          while self.dinosaur.dinosaur_still_alive() and self.robot.robot_still_alive():
             self.dinosaur.dinosaur_attack(self.robot)
+            print(f"{self.dinosaur.name} attacked {self.robot.name}, now {self.robot.name} health is at {self.robot.health}")
+
             self.robot.robot_attack(self.dinosaur)
-            print({self.robot.name}, {self.robot.health}, {self.dinosaur.name}, {self.dinosaur.health})
+            print(f"{self.robot.name} attacked {self.dinosaur.name}, now {self.dinosaur.name} health is at {self.dinosaur.health}")
+           
            
 
     def display_winner(self):
-        pass
+        print(f"THE FIGHT IS OVER {self.dinosaur.name} WINS!")
 
 
