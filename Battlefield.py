@@ -17,6 +17,7 @@ class Battlefield:
          while self.dinosaur.dinosaur_still_alive() and self.robot.robot_still_alive():
             self.dinosaur.dinosaur_attack(self.robot)
             self.robot.robot_attack(self.dinosaur)
+            print({self.robot.name}, {self.robot.health}, {self.dinosaur.name}, {self.dinosaur.health})
            
 
     def display_winner(self):
