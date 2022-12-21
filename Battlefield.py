@@ -19,7 +19,7 @@ class Battlefield:
     def battle_phase(self):
          while self.dinosaur.dinosaur_still_alive() and self.robot.robot_still_alive():
             self.robot.robot_attack(self.dinosaur)
-            print(f"{self.robot.name} attacked {self.dinosaur.name}, now {self.dinosaur.name} health is at {self.dinosaur.health}")
+            print(f"{self.robot.name} attacked {self.dinosaur.name} with it's {self.active_weapon.name}, now {self.dinosaur.name} health is at {self.dinosaur.health}")
 
             self.dinosaur.dinosaur_attack(self.robot)
             print(f"{self.dinosaur.name} attacked {self.robot.name}, now {self.robot.name} health is at {self.robot.health}")
